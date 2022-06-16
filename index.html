@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 4</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+   <div class="container-fondo"></div>
+   <!-- <audio src="assets/sound/Duet Soundtrack 8_ Patinkin (152kbit_Opus).ogg" autoplay loop></audio> -->
+    <div class="vimeo-wrapper">
+        <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe src="https://player.vimeo.com/video/335621930?background=1&autoplay=1#t=10s&loop=1&byline=0&title=0&muted=1&controls=0" 
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+            frameborder="0" muted="1" allow="autoplay; fullscreen" allowfullscreen>
+        </iframe>
+    </div>
+        <script src="https://player.vimeo.com/api/player.js">
+        </script>
+     </div>
+    <nav>
+        <li><a href="#">Index</a></li>
+    </nav> 
+        <select class="stile-dropdown-1" id="input-bg"> 
+            <option value="0">Background Fiesta</a>
+            <option value="1">Background Fiesta </a>
+            <option value="2">Background Abstract</a>
+            <option value="3">Background Abstract Flower</a>
+            <option value="4">Background Industrial</a>
+            <option value="5">Background Collage</a>
+            <option value="6">Background Monocromatico Blu</a>     
+            <option value="7">Background Monocromatico Viola</a>            
+       
+       </select>
+       <select class="stile-dropdown-4" id="input-occhiosx"> 
+        <option value="0">Occhio Castano</a>
+        <option value="1">Occhio B/W</a>
+        <option value="2">Occhio Marrone</a>
+        <option value="3">Occhio Marrone Scuro</a>
+        <option value="4">Occhio Nero</a>
+        <option value="5">Occhio Azzurro Mare</a>
+        <option value="6">Occhio Azzurro Chiaro</a>            
+        <option value="7">Occhio Salame</a>            
+   </select>
+       <select class="stile-dropdown-3" id="input-occhiodx"> 
+        <option value="0">Occhio Castano</a>
+            <option value="1">Occhio B/W</a>
+            <option value="2">Occhio Marrone</a>
+            <option value="3">Occhio Marrone Scuro</a>
+            <option value="4">Occhio Nero</a>
+            <option value="5">Occhio Azzurro Mare</a>
+            <option value="6">Occhio Azzurro Chiaro</a>            
+            <option value="7">Occhio Salame</a>             
+   </select>
+       <select class="stile-dropdown-7" id="input-orecchioL"> 
+        <option value="0">Orecchio Collage 1</a>
+        <option value="1">Orecchio Collage 2</a>
+        <option value="2">Orecchio Collage 3</a>
+        <option value="3">Orecchio Elfo</a>
+        <option value="4">Orecchio Frankenstein</a>
+         
+   </select>
+       <select class="stile-dropdown-8" id="input-orecchioR"> 
+        <option value="0">Orecchio Collage 1</a>
+            <option value="1">Orecchio Collage 2</a>
+            <option value="2">Orecchio Collage 3</a>
+            <option value="3">Orecchio Elfo</a>
+            <option value="4">Orecchio Frankenstein</a>
+     
+   </select>
+       <select class="stile-dropdown-5" id="input-bocca"> 
+        <option value="0">Bocca 0</a>
+        <option value="1">Bocca 1</a>
+        <option value="2">Bocca 2</a>
+        <option value="3">Bocca 3</a>
+        <option value="4">Bocca 4</a>
+        <option value="5">Bocca 5</a>
+        <option value="6">Bocca Banana</a>            
+        <option value="7">Bocca 7</a>            
+   </select>
+       <select class="stile-dropdown-6" id="input-naso"> 
+        <option value="0">Naso 0</a>
+        <option value="1">Naso 1</a>
+        <option value="2">Naso 2</a>
+        <option value="3">Naso 3</a>
+        <option value="4">Naso 4</a>
+        <option value="5">Naso 5</a>
+        <option value="6">Naso 6</a>            
+        <option value="7">Naso PonPon</a>            
+        <option value="8">Naso Pera</a>            
+   </select>
+       <select class="stile-dropdown-2" id="input-faccia"> 
+        <option value="0">Faccia Ragazzo B/W</a>
+        <option value="1">Faccia Ragazza Ovale</a>
+        <option value="2">Faccia Ragazzo Con Barba</a>
+        <option value="3">Faccia Ragazza Squadrata</a>
+        <option value="4">Faccia Ragazza Squadrata 2</a>
+        <option value="5">Faccia Ebony Ovale</a>
+        <option value="6">Faccia Big Mama</a>            
+   </select>
+    <div class="contenitore" id="contenitore">
+        <div class="bg">
+            <img src="assets/bg/bg_0.png" alt="">
+        </div>
+       <div  class="orecchioL">
+            <img src="assets/orecchie/orecchio_0.png" alt="">
+        </div>
+            <div class="orecchioR">
+                <img src="assets/orecchie/orecchio_0.png" alt=""> 
+            </div>
+            <div class="facce">
+                <img src="assets/facce/facce_0.png" alt="">
+            </div>
+            <div class="naso">
+                <img src="assets/nasi/nasi_0.png" alt="">
+            </div>
+            <div class="bocca">
+                <img src="assets/bocca/bocca_0.png" alt="">
+            </div>
+            <div id="occhiodaflippare" class="occhio occhioL">
+                <img src="assets/occhi/occhi_0.png" alt="">
+            </div>
+            <div class="occhio occhioR">
+                <img src="assets/occhi/occhi_0.png" alt="">
+            </div>
+    </div>
+    <div class="interfaccia">
+        <label for="#inbg"> </label>
+        <input id="inbg" type="range" min="0" step="1" value="0" oninput="document.getElementById('libgvalue').innerHTML = this.value + ' / '+ bg" >
+
+        <label for="#inocchiosx"> </label>
+        <input id="inocchiosx" type="range" min="0" step="1" value="0" oninput="document.getElementById('liocchiosxvalue').innerHTML = this.value + ' / '+ occhioL">
+
+        <label for="#inocchiodx"> </label>
+        <input id="inocchiodx" type="range" min="0" step="1" value="0" oninput="document.getElementById('liocchiodxvalue').innerHTML = this.value + ' / '+ occhioR">
+
+        <label for="#inorecchioL"></label>
+        <input id="inorecchioL" type="range" min="0" step="1" value="0" oninput="document.getElementById('liorecchioLvalue').innerHTML = this.value + ' / '+ orecchioL">
+
+        <label for="#inorecchioR"></label>
+        <input id="inorecchioR" type="range" min="0" step="1" value="0" oninput="document.getElementById('liorecchioRvalue').innerHTML = this.value + ' / '+ orecchioR">
+        
+
+        <label for="#inbocca"></label>
+        <input id="inbocca" type="range" min="0" step="1" value="0" oninput="document.getElementById('liboccavalue').innerHTML = this.value + ' / '+ bocche">
+    
+
+        <label for="#innaso"></label>
+        <input id="innaso" type="range" min="0" step="1" value="0" " oninput="document.getElementById('linasovalue').innerHTML = this.value + ' / '+ nasi">
+    
+
+        <label for="#infaccia"></label>
+        <input id="infaccia" type="range" min="0" step="1" value="0" oninput="document.getElementById('lifacciavalue').innerHTML = this.value + ' / '+ facce">
+        
+
+        </select>
+    </div>
+</body>
+<script>
+    let slider_faccia = 0
+    let facce = 6
+    let bg = 7
+    let bocche = 7
+    let nasi = 7
+    let occhioL = 7
+    let occhioR = 7
+    let orecchioL = 4
+    let orecchioR = 4
+
+    let nbg = Math.floor(Math.random() * bg)
+    let nfaccia = Math.floor(Math.random() * facce)
+    let nbocca = Math.floor(Math.random() * bocche)
+    let nnaso = Math.floor(Math.random() * nasi)
+    let nocchioL = Math.floor(Math.random() * occhioL)
+    let nocchioR = Math.floor(Math.random() * occhioR)
+    let norecchioL = Math.floor(Math.random() * orecchioL)
+    let norecchioR = Math.floor(Math.random() * orecchioR)
+    
+
+
+
+    //il max input dello slider è uguale al numero di elementi dichiarati nelle variabili "Facce,bg, ecc"
+    document.getElementById("infaccia").max = facce
+    document.getElementById("innaso").max = nasi
+    document.getElementById("inbocca").max = bocche
+    document.getElementById("inocchiodx").max = occhioR
+    document.getElementById("inocchiosx").max = occhioL
+    document.getElementById("inbg").max = bg
+    document.getElementById("inorecchioL").max = orecchioL
+    document.getElementById("inorecchioR").max = orecchioR
+
+    //PROVE
+    // document.body.addEventListener( 'mousemove',function(e){
+    // nbg = Math.floor(Math.random() * bg)
+    // document.querySelector("#inbg").value = nbg
+    // console.log(nbg)
+    //  })
+        // const para = document.createElement("p")
+        // const node = document.createTextNode (":" + "" + e.target.value)
+        // para.appendChild(node)
+        // const element = document.getElementById("libg")
+        // element.appendChild(para)}
+
+    //lettura valori slider
+    document.querySelector("#inbg").addEventListener("input", function (e) {
+        document.querySelector(".bg img").src = "assets/bg/bg_" + e.target.value + ".png"
+    })
+    document.querySelector("#inocchiosx").addEventListener("input", function (e) {
+        document.querySelector(".occhioL img").src = "assets/occhi/occhi_" + e.target.value + ".png"
+    })
+    document.querySelector("#inocchiodx").addEventListener("input", function (e) {
+        document.querySelector(".occhioR img").src = "assets/occhi/occhi_" + e.target.value + ".png"
+    })
+    document.querySelector("#inorecchioL").addEventListener("input", function (e) {
+        document.querySelector(".orecchioL img").src = "assets/orecchie/orecchio_" + e.target.value + ".png"
+    })
+    document.querySelector("#inorecchioR").addEventListener("input", function (e) {
+        document.querySelector(".orecchioR img").src = "assets/orecchie/orecchio_" + e.target.value + ".png"
+ })
+    document.querySelector("#inbocca").addEventListener("input", function (e) {
+        document.querySelector(".bocca img").src = "assets/bocca/bocca_" + e.target.value + ".png"
+        
+    })
+    document.querySelector("#innaso").addEventListener("input", function (e) {
+        document.querySelector(".naso img").src = "assets/nasi/nasi_" + e.target.value + ".png"
+        
+    })
+ 
+    document.querySelector("#infaccia").addEventListener("input", function (e) {
+        document.querySelector(".facce img").src = "assets/facce/facce_" + e.target.value + ".png"
+        
+    })
+    
+
+
+
+     //lettura valori dropdown
+     document.querySelector("#input-bg").addEventListener("change", function (e) {
+         document.querySelector(".bg img").src = "assets/bg/bg_" + e.target.value + ".png"
+        })
+        document.querySelector("#input-occhiosx").addEventListener("change", function (e) {
+            document.querySelector(".occhioL img").src = "assets/occhi/occhi_" + e.target.value + ".png"
+           
+    
+        })
+        document.querySelector("#input-occhiodx").addEventListener("change", function (e) {
+            document.querySelector(".occhioR img").src = "assets/occhi/occhi_" + e.target.value + ".png"
+        })
+        document.querySelector("#input-orecchioL").addEventListener("change", function (e) {
+            document.querySelector(".orecchioL img").src = "assets/orecchie/orecchio_" + e.target.value + ".png"
+        })
+        document.querySelector("#input-orecchioR").addEventListener("change", function (e) {
+            document.querySelector(".orecchioR img").src = "assets/orecchie/orecchio_" + e.target.value + ".png"
+        })
+        document.querySelector("#input-bocca").addEventListener("change", function (e) {
+            document.querySelector(".bocca img").src = "assets/bocca/bocca_" + e.target.value + ".png"
+    
+        })
+        document.querySelector("#input-naso").addEventListener("change", function (e) {
+            document.querySelector(".naso img").src = "assets/nasi/nasi_" + e.target.value + ".png"
+    
+        })
+        
+        document.querySelector("#input-faccia").addEventListener("change", function (e) {
+           document.querySelector(".facce img").src = "assets/facce/facce_" + e.target.value + ".png"
+           
+       })
+        
+
+    
+        
+
+</script>
+
+<!-- oninput="document.querySelector('.facce img').src = 'assets/facce/facce_0.png'"
+            oninput="document.querySelector('.facce img').src = 'assets/facce/facce_1.png'"
+            oninput="document.querySelector('.facce img').src = 'assets/facce/facce_2.png'"
+            oninput="document.querySelector('.facce img').src = 'assets/facce/facce_3.png'"
+            oninput="document.querySelector('.facce img').src = 'assets/facce/facce_4.png'"
+            oninput="document.querySelector('.facce img').src = 'assets/facce/facce_5.png'"
+            oninput="document.querySelector('.facce img').src = 'assets/facce/facce_6.png'" 
+            <a href="#" oninput="faccedrop">Faccia 1</a>
+            <a href="#">Faccia 2</a>
+            <a href="#">Faccia 3</a>
+            <a href="#">Faccia 4</a>
+            <a href="#">Faccia 5</a>
+            <a href="#">Faccia 6</a>
+            <a href="#">Faccia 7</a> -->
+
+</html>

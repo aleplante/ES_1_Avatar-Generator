@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity:0.8;}
+
+}
+@-moz-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity:0.8;}
+
+}
+@-webkit-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity:0.8;}
+
+}
+@-o-keyframes fadein {
+    from {opacity: 0;}
+    to {opacity:0.8;}
+
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;    
+
+}
+
+.container-fondo{
+    height: 100%;
+    width: 100%;
+    background-image: url(assets/bg_4.png);
+    background-size: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top:0;
+    z-index: 1;
+    mix-blend-mode:hard-light;
+}
+
+.vimeo-wrapper {
+    animation: fadein 10s;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    scale: 2;
+    z-index: -1;
+ }
+ .vimeo-wrapper iframe {
+    width: 100%;
+    position: absolute;
+ }
+ 
+img{
+    pointer-events: none;
+    user-select: none;
+}
+
+/* @keyframes hoverbg{
+    from{
+       opacity: 0; 
+       background-color: (radial-gradient(circle, rgba(218,218,218,1) 0%, rgba(0,0,0,1)));}
+   to{ 
+       opacity:0.8;
+       background-color: (radial-gradient(circle, rgba(218,218,218,1) 100%, rgba(0,0,0,1)));}
+   }    */
+select{
+    opacity: 0;
+    height:  25.8%;
+    width: 8.5%;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: transparent;
+    padding: 10px;
+
+
+}
+
+select:hover{
+    background-color: rgb(255, 255, 255);
+       color:rgb(0, 0, 0);
+       mix-blend-mode: hard-light;
+       opacity: 0.7;
+       transition: all ease-in-out 0.3s;
+   }
+
+.stile-dropdown-1{
+    position: absolute;
+    min-width: 100px;
+    right: 25%;
+    top:0.2%;
+    z-index: 100;
+}
+
+.stile-dropdown-2{
+    position: absolute;
+    min-width: 100px;
+    right: 16.7%;
+    top:0.2%;
+    z-index: 100;
+}
+.stile-dropdown-3{
+    position: absolute;
+    min-width: 100px;
+    right: 8.2%;
+    top:0.2%;
+    z-index: 100;
+}
+.stile-dropdown-4{
+    position: absolute;
+    min-width: 100px;
+    right: 0.2%;
+    top:0.2%;
+    z-index: 100;
+}
+.stile-dropdown-5{
+    position: absolute;
+    min-width: 100px;
+    right: 25%;
+    top:25.7%;
+    z-index: 100;
+}
+.stile-dropdown-6{
+    position: absolute;
+    min-width: 100px;
+    right: 16.7%;
+    top:25.7%;
+    z-index: 100;
+}
+.stile-dropdown-7{
+    position: absolute;
+    min-width: 100px;
+    right: 8.2%;
+    top:25.7%;
+    z-index: 100;
+}
+.stile-dropdown-8{
+    position: absolute;
+    min-width: 100px;
+    right: 0.2%;
+    top:25.7%;
+    z-index: 100;
+}
+
+
+
+.contenitore {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 50%;
+    top: 35%;
+    margin-left: -200px;
+    margin-top: -200px;
+    text-align: center;
+    z-index: 2;
+}
+
+.naso {
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    left: 25%;
+    top: 10%;
+    z-index: 2;
+}
+.naso img{
+    width: 70%;
+}
+.bocca{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 40%;
+    z-index: 4;
+    
+}
+.bocca img{
+    width: 50%;
+}
+
+.orecchioR{
+    position: absolute;
+    right: -51%;
+    top: -31%;
+    z-index: 0;
+}
+.orecchioR img{
+    scale: 0.4;
+}
+.orecchioL{
+    position: absolute;
+    left: -47%;
+    top: -31%;
+    z-index: 0;
+}
+.orecchioL img{
+    transform: scaleX(-1);
+    scale: 0.4;
+}
+
+.bg{
+    width: 80%;
+    z-index: -1;
+}
+.occhio{
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    top: -6%;
+    z-index: 2;
+}
+.occhio img{
+    width: 70%;
+}
+.occhioL{
+    left: 45%;
+}
+.occhioR{
+    right: 45%;
+}
+.facce {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 30%;
+    z-index: 1;
+}
+
+.facce img {
+    width: 100%;
+}
+
+.flipimg {
+    transform: scaleX(-1);
+}
+
+.stats{
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    color: #f2f2f2;
+    font-family: montserrat;
+    left: 3%;
+    top: 26.5%;    
+    line-height: 2.4em;
+}
+.stats li,p{
+display: inline;
+}
+input[type="range"] {
+    display: block;
+    -webkit-appearance: none;
+      -moz-appearance: none;
+      border-radius: 10px;
+      background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(110,110,110,1) 20%, rgba(218,218,218,1) 50%, rgba(110,110,110,1) 80%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    height: 0.5px;
+  }
+  .interfaccia {
+    position: absolute;
+    width: 92.5%;
+    left: 3.75%;
+    bottom: 4%;
+    color: aliceblue;
+    z-index: 200;
+    margin: auto;
+}
+
+.interfaccia label {
+    margin-top: 1.9em;
+    display: block;
+} 
+
+  nav{
+      display: block;
+      color: white;
+        list-style: none;
+  }
+  nav li {
+      margin-left: 1%;
+      margin-top:0.9%;
+      position: absolute;
+z-index: 1;
+  }
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
