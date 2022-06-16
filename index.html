@@ -10,6 +10,19 @@
 </head>
 
 <body>
+    <a id="togglefullscreen"""> 
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+         <g>
+             <g transform="translate(0.000000,511.000000) scale(0.100000,-0.100000)">
+                 <path fill="white"
+                     d="M6472.3,4526.9v-483.1h878.8h881.1L6971.5,2783.1L5713.1,1524.8l349.7-352l352-349.7l1258.4,1258.4l1260.7,1260.6v-881.1v-878.8h483.1H9900v1713.9V5010H8186.2H6472.3V4526.9z" />
+                 <path fill="white"
+                     d="M2324.6-1863.8L1066.2-3122.2v881.1v878.8H583.1H100v-1713.8V-4790h1713.8h1713.9v483.1v483.1h-878.8h-881.1L3017-2574.6c685.5,685.5,1246.9,1258.4,1246.9,1269.9c0,13.8-151.8,177.1-340.5,363.5l-338.2,338.2L2324.6-1863.8z" />
+             </g>
+         </g>
+     </svg>
+    </a>
     <div class="preload">
         <div class="c1">
             <h2 class="preloadDisclaimer_top">
@@ -26,88 +39,88 @@
             </h2>
         </div>
     </div>
-        <div class="container-fondo"></div>
-        <div class="vimeo-wrapper">
-            <div style="padding:56.25% 0 0 0;position:relative;">
-                <iframe
-                    src="https://player.vimeo.com/video/335621930?background=1&autoplay=1#t=10s&loop=1&byline=0&title=0&muted=1&controls=0"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" muted="1"
-                    allow="autoplay; fullscreen" allowfullscreen id="video">
-                </iframe>
-            </div>
-            <script src="https://player.vimeo.com/api/player.js">
-            </script>
+    <div class="container-fondo"></div>
+    <div class="vimeo-wrapper">
+        <div style="padding:56.25% 0 0 0;position:relative;">
+            <iframe
+                src="https://player.vimeo.com/video/335621930?background=1&autoplay=1#t=10s&loop=1&byline=0&title=0&muted=1&controls=0"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" muted="1"
+                allow="autoplay; fullscreen" allowfullscreen id="video">
+            </iframe>
         </div>
-        <nav>
-            <li>
-                <a href="#">Index</a>
-            </li>
-        </nav>
-        <div class="contenitore" id="contenitore">
-            <div class="bg">
-                <img src="assets/bg/bg_0.png" alt="">
-            </div>
-            <div class="orecchioL">
-                <img src="assets/orecchie/orecchio_0.png" alt="">
-            </div>
-            <div class="orecchioR">
-                <img src="assets/orecchie/orecchio_0.png" alt="">
-            </div>
-            <div class="facce">
-                <img src="assets/facce/facce_0.png" alt="">
-            </div>
-            <div class="naso">
-                <img src="assets/nasi/nasi_0.png" alt="">
-            </div>
-            <div class="bocca">
-                <img src="assets/bocca/bocca_0.png" alt="">
-            </div>
-            <div id="occhiodaflippare" class="occhio occhioL">
-                <img src="assets/occhi/occhi_0.png" alt="">
-            </div>
-            <div class="occhio occhioR">
-                <img src="assets/occhi/occhi_0.png" alt="">
-            </div>
+        <script src="https://player.vimeo.com/api/player.js">
+        </script>
+    </div>
+    <nav>
+        <li>
+            <a href="#">Index</a>
+        </li>
+    </nav>
+    <div class="contenitore" id="contenitore">
+        <div class="bg">
+            <img src="assets/bg/bg_0.png" alt="">
         </div>
-        <div class="interfaccia">
-            <label for="#inbg"> </label>
-            <input id="inbg" type="range" min="0" step="1" value="0"
-                oninput="document.getElementById('libgvalue').innerHTML = this.value + ' / '+ bg">
-
-            <label for="#inocchiosx"> </label>
-            <input id="inocchiosx" type="range" min="0" step="1" value="0"
-                oninput="document.getElementById('liocchiosxvalue').innerHTML = this.value + ' / '+ occhioL">
-
-            <label for="#inocchiodx"> </label>
-            <input id="inocchiodx" type="range" min="0" step="1" value="0"
-                oninput="document.getElementById('liocchiodxvalue').innerHTML = this.value + ' / '+ occhioR">
-
-            <label for="#inorecchioL"></label>
-            <input id="inorecchioL" type="range" min="0" step="1" value="0"
-                oninput="document.getElementById('liorecchioLvalue').innerHTML = this.value + ' / '+ orecchioL">
-
-            <label for="#inorecchioR"></label>
-            <input id="inorecchioR" type="range" min="0" step="1" value="0"
-                oninput="document.getElementById('liorecchioRvalue').innerHTML = this.value + ' / '+ orecchioR">
-
-
-            <label for="#inbocca"></label>
-            <input id="inbocca" type="range" min="0" step="1" value="0"
-                oninput="document.getElementById('liboccavalue').innerHTML = this.value + ' / '+ bocche">
-
-
-            <label for="#innaso"></label>
-            <input id="innaso" type="range" min="0" step="1" value="0" " oninput="
-                document.getElementById('linasovalue').innerHTML=this.value + ' / ' + nasi">
-
-
-            <label for="#infaccia"></label>
-            <input id="infaccia" type="range" min="0" step="1" value="0"
-                oninput="document.getElementById('lifacciavalue').innerHTML = this.value + ' / '+ facce">
-
-
-            </select>
+        <div class="orecchioL">
+            <img src="assets/orecchie/orecchio_0.png" alt="">
         </div>
+        <div class="orecchioR">
+            <img src="assets/orecchie/orecchio_0.png" alt="">
+        </div>
+        <div class="facce">
+            <img src="assets/facce/facce_0.png" alt="">
+        </div>
+        <div class="naso">
+            <img src="assets/nasi/nasi_0.png" alt="">
+        </div>
+        <div class="bocca">
+            <img src="assets/bocca/bocca_0.png" alt="">
+        </div>
+        <div id="occhiodaflippare" class="occhio occhioL">
+            <img src="assets/occhi/occhi_0.png" alt="">
+        </div>
+        <div class="occhio occhioR">
+            <img src="assets/occhi/occhi_0.png" alt="">
+        </div>
+    </div>
+    <div class="interfaccia">
+        <label for="#inbg"> </label>
+        <input id="inbg" type="range" min="0" step="1" value="3"
+            oninput="document.getElementById('libgvalue').innerHTML = this.value + ' / '+ bg">
+
+        <label for="#inocchiosx"> </label>
+        <input id="inocchiosx" type="range" min="0" step="1" value="6"
+            oninput="document.getElementById('liocchiosxvalue').innerHTML = this.value + ' / '+ occhioL">
+
+        <label for="#inocchiodx"> </label>
+        <input id="inocchiodx" type="range" min="0" step="1" value="2"
+            oninput="document.getElementById('liocchiodxvalue').innerHTML = this.value + ' / '+ occhioR">
+
+        <label for="#inorecchioL"></label>
+        <input id="inorecchioL" type="range" min="0" step="1" value="4"
+            oninput="document.getElementById('liorecchioLvalue').innerHTML = this.value + ' / '+ orecchioL">
+
+        <label for="#inorecchioR"></label>
+        <input id="inorecchioR" type="range" min="0" step="1" value="1"
+            oninput="document.getElementById('liorecchioRvalue').innerHTML = this.value + ' / '+ orecchioR">
+
+
+        <label for="#inbocca"></label>
+        <input id="inbocca" type="range" min="0" step="1" value="3"
+            oninput="document.getElementById('liboccavalue').innerHTML = this.value + ' / '+ bocche">
+
+
+        <label for="#innaso"></label>
+        <input id="innaso" type="range" min="0" step="1" value="3 " oninput="
+            document.getElementById('linasovalue').innerHTML=this.value + ' / ' + nasi">
+
+
+        <label for="#infaccia"></label>
+        <input id="infaccia" type="range" min="0" step="1" value="4"
+            oninput="document.getElementById('lifacciavalue').innerHTML = this.value + ' / '+ facce">
+
+
+        </select>
+    </div>
 </body>
 <script>
     let slider_faccia = 0
@@ -177,9 +190,44 @@
 
     })
     setTimeout(() => {
-  const preload = document.querySelector('.preload');
-  preload.classList.add('preload-finish')
-}, "8000")
+        const preload = document.querySelector('.preload');
+        preload.classList.add('preload-finish')
+    }, "6000")
+
+    //-------------------------------------------------------- GOFULLSCREEN----------------------------//
+    function toggleFullscreen(elem) {
+  elem = elem || document.documentElement;
+
+  if (!document.fullscreenElement && !document.mozFullScreenElement &&
+    !document.webkitFullscreenElement && !document.msFullscreenElement) {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      elem.msRequestFullscreen();
+    } else if (elem.mozRequestFullScreen) {
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) {
+      elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+    }
+  } else {
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.msExitFullscreen) {
+      document.msExitFullscreen();
+    } else if (document.mozCancelFullScreen) {
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) {
+      document.webkitExitFullscreen();
+    }
+  }
+}
+
+document.getElementById('togglefullscreen').addEventListener('click', function() {
+  toggleFullscreen();
+});
+
+
+   
 </script>
 
 </html>
