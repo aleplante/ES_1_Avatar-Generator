@@ -30,7 +30,7 @@ svg {
     top: 4vh;
     right: 4vh;
     background-color: transparent;
-    width: 1.4vw;
+    width: calc(64px + 6 * ((100vw - 320px) / 680));
     z-index: 99999;
 }
 
@@ -245,8 +245,7 @@ select {
     line-height: 2.4em;
 }
 
-.stats li,
-p {
+.stats li, p {
     display: inline;
 }
 
@@ -292,4 +291,51 @@ a {
     text-decoration: none;
     color: white;
     font-weight: 100;
+}
+svg {
+    background-color: transparent;
+    width: calc(14px + 6 * ((100vw - 320px) / 680));
+    z-index: 99999;
+}
+
+.menu {
+    font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+    width: 100%;
+    height: 5vh;
+    color: white;
+    position: fixed;
+    top: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.fullscreenSVG {
+    cursor: pointer;
+    margin-right: 3vw;
+    order: 3;
+
+}
+.index {
+    order: 1;
+    margin-left: 1vw;
+
+}
+
+.index a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+}
+@media screen and (min-width:1920px) {
+    input[type="range"]{
+    height: 1px;
+    }
+}
+@media screen and (min-width:3840px) {
+    input[type="range"]{
+    height: 2px;
+    }
 }
